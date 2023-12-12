@@ -10,7 +10,7 @@ Accessing VNC running in GitPod via a VNC Client.
 3. Add "New SSH" key in GitPod User Settings and paste in the public SSH key.
 4. Click the button below:
 
-   [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/braughtg/gitpodVNC)
+   [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://gitlab.com/hfossedu/kits/kitclient-gitpod-runner)
 
 5. Choose "Terminal" in the "Editor/Browser" dropdown (the middle one).
 6. Click "Contine"
