@@ -33,9 +33,9 @@ then
     echo "OR"
     echo ""
 
-    echo "Do the following on our machine to connect via VNC:"
+    echo "Do the following on your machine to connect via VNC:"
     SSH_URL=$(gp ssh | cut -f2 -d' ')
-    echo "  Run the command:"
+    echo "  Run the following command in a terminal:"
     echo "    ssh -L 5901:localhost:5901 $SSH_URL"
     echo "  Connect your VNC Client to:"
     echo "    localhost:5901"
