@@ -20,7 +20,3 @@ Accessing VNC running in GitPod via a VNC Client.
    gp stop
    ```
    Or use the GitPod Dashboard.
-  - I.e. will it happen mid work if someone take a bathroom break?
-- How do we keep students from burning up their free credits?
-- Is it a problem that each new workspace creates a new "known host" for ssh?
-- Would it make sense to eventually build the linux KitClient on the `gitpod/worspace-full-vnc` image instead?
