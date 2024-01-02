@@ -8,7 +8,7 @@ then
     echo ""
 fi
 
-CONTAINER_EXISTS=$(docker ps -a | grep "vnc")
+CONTAINER_EXISTS=$(docker ps -a | grep "KitClient")
 if [ -z "$CONTAINER_EXISTS" ];
 then
     echo "Creating KitClient container..."
@@ -18,7 +18,7 @@ then
     echo ""
 fi
 
-CONTAINER_RUNNING=$(docker ps | grep "vnc")
+CONTAINER_RUNNING=$(docker ps | grep "KitClient")
 if [ -z "$CONTAINER_RUNNING" ];
 then
     echo "Starting KitClient container"
