@@ -2,7 +2,6 @@ IMAGE_PULLED=$(docker image ls | tail -n +2)
 if [ -z "$IMAGE_PULLED" ];
 then
     echo "Pulling KitClient image..."
-    #docker pull braughtg/vnc-novnc-base:1.2.1
     docker pull registry.gitlab.com/hfossedu/kits/kitclient:latest
     echo "Pulled."
     echo ""
@@ -12,7 +11,6 @@ CONTAINER_EXISTS=$(docker ps -a | grep "KitClient")
 if [ -z "$CONTAINER_EXISTS" ];
 then
     echo "Creating KitClient container..."
-    #docker create --name vnc --publish 5901:5901 --publish 6901:6901 braughtg/vnc-novnc-base:1.2.1
     docker create --name KitClient -p 6901:6901 -p 5901:5901 registry.gitlab.com/hfossedu/kits/kitclient:latest
     echo "Created."
     echo ""
@@ -22,7 +20,6 @@ CONTAINER_RUNNING=$(docker ps | grep "KitClient")
 if [ -z "$CONTAINER_RUNNING" ];
 then
     echo "Starting KitClient container"
-    #docker start vnc
     docker start KitClient
     gp ports await 5901 > /dev/null
     gp ports await 6901 > /dev/null
